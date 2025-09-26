@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.burger {
+    display: none;
+}
+
+body {
+    background-color: rgba(237, 243, 248, 1);
+}
+
+.navbar {
+    padding: 20px;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-right: 60px;
+}
+
+.ong {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: rgba(186, 66, 112, 1);
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    padding: 10px 30px;
+    border-radius: 24px;
+    border: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(54, 83, 107, 1);
+}
+
+/* header qissm */
+.header-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header-wrapper h1 {
+    padding-right: 500px;
+    font-style: 72px;
+    color: #36536B;
+}
+
+/* cards */
+.card {
+    width: 250px;
+    text-align: center;
+}
+
+.card img {
+    margin-bottom: 25px;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1B262F;
+    padding: 20px;
+
+}
+
+footer a {
+    color: #FBFCFE;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-wrapper ul,
+.ikonkalar {
+    align-items: center;
+}
+
+.ikonkalar {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+@media screen and (max-width:700px) and (min-width: 300px) {
+    .ong {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+@media screen and (max-width:1119px) and (min-width: 700px) {
+    .header-wrapper h1 {
+        font-size: 50px;
+    }
+
+    .tel {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:700px) and (min-width: 300px) {
+    .header-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .header-wrapper h1 {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:752px) and (min-width: 300px) {
+    .cards-wrapper {
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    .cards {
+        margin-top: 100px;
+    }
+
+    .card img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:752px) and (min-width: 300px) {
+    .footer-wrapper{
+        flex-direction: column;
+
+    }
+    footer ul{
+        flex-direction: column;
+        margin-right: 0px;
+       
+    }
+    footer a{
+    
+    }
+}
